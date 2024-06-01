@@ -2,7 +2,7 @@ from abc import ABC
 
 
 class Customer(ABC):
-    def __init__(self, customer_id, customer_name, customer_phone, customer_address):
+    def __init__(self, customer_id=None, customer_name=None, customer_phone=None, customer_address=None):
         self.__customer_id = customer_id
         self.__customer_name = customer_name
         self.__customer_phone = customer_phone

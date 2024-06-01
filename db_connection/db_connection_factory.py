@@ -5,7 +5,7 @@ class DbConnectionFactory:
     # static variables for db credentials [ configurations ]
     USER = 'root'
     PASSWORD = 'root'
-    HOST = 'localhost'
+    HOST = 'localhost' # 192.168.13.14 ip
     DATABASE = 'oe'
     # PORT
 
@@ -23,6 +23,7 @@ class DbConnectionFactory:
             print('DB Connection Failed', ex)
         return db_conn
 
+
 # main program
-# my_conn = DbConnectionFactory.create_connection()
-# print(my_conn)
+my_conn = DbConnectionFactory.create_connection()
+print(my_conn)
